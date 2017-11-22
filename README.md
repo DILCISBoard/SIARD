@@ -14,6 +14,8 @@ The SIARD 2.0 format is an extension of the standard eCH-0165 for the SIARD 1.0 
 
 SIARD 1.0 was developed in 2008 by the Swiss Federal Archives and has been a Swiss standard since 2013 ([eCH-0165](http://www.bar.admin.ch/dienstleistungen/00823/01911/index.html?lang=en&download=NHzLpZeg7t,lnp6I0NTU042l2Z6ln1ad1IZn4Z2qZpnO2Yuq2Z6gpJCDeIN,gGym162epYbg2c_JjKbNoKSn6A--)).
 
-SIARD 2.0 was developed in 2015 by the Swiss Federal Archives and the [EARK project](http://www.eark-project.com/)  
+SIARD 2.0 was developed in 2015 by the Swiss Federal Archives and the [E-ARK project](http://www.eark-project.com/)  
 
 # Specifications
+
+SIARD 2.0 version [2015-10-27](https://github.com/DLMArchivalStandardsBoard/SIARD/tree/master/SIARD%202.0/format/2015-10-27) created after the public hearing 
