@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<table 
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+  xmlns="http://www.admin.ch/xmlns/siard/2.0/schema0/table1.xsd" 
+  xsi:schemaLocation="http://www.admin.ch/xmlns/siard/2.0/schema0/table1.xsd table1.xsd">
+  <row>
+    <c1>5</c1> <!-- ID -->
+    <c2>5555</c2> <!-- CDISTINCT -->
+    <c3> <!-- CROW -->
+      <r1>1234</r1> <!-- TAPEID -->
+      <r2 file="record0.txt" length="84000" digestType="MD5" messageDigest="D1341187455adfCA86E5666C974B5950"/> <!-- TRANSCRIPTIOM -->
+      <r3 file="record0.bin" length="16000" digestType="MD5" messageDigest="D1C411FC45542DCA86EEB1CC9B4B596C"/> <!-- SOUND -->
+    </c3>
+    <c4> <!-- CARRAY -->
+      <a1>Vorname1</a1>
+       <!--  a2 is NULL! and therefore missing -->
+      <a3>Patronymic</a3>
+      <a4>Name</a4>
+    </c4>
+    <c5> <!-- CUDT -->
+      <u1>9876</u1> <!-- ID -->
+      <u2> <!-- NESTEDROW -->
+	      <r1>71934576</r1> <!-- TAPEID -->
+	      <!-- r2 is NULL and therefore missing -->
+	      <r3 file="sub1000/record0.bin" length="16000" digestType="MD5" messageDigest="D1C411FC45542DCA86EEB1CC9B4B596C"/> <!-- SOUND -->
+      </u2>
+    </c5>
+  </row>
+</table>
