@@ -18,4 +18,7 @@ SIARD 2.0 was developed in 2015 by the Swiss Federal Archives and the [E-ARK pro
 
 # Specifications
 
-SIARD 2.0 version [2015-10-27](https://github.com/DLMArchivalStandardsBoard/SIARD/tree/master/SIARD%202.0/format/2015-10-27) created after the public hearing 
+SIARD 2.0 version [2015-10-27](https://github.com/DLMArchivalStandardsBoard/SIARD/tree/master/SIARD%202.0/format/2015-10-27) - created after the public hearing 
+
+SIARD 2.0 version [2015-11-13](https://github.com/DLMArchivalStandardsBoard/SIARD/tree/master/SIARD%202.0/format/2015-11-13)
+- minor changes (shown using track changes)
