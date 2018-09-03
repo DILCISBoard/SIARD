@@ -30,6 +30,9 @@ SIARD 2.0 [2016-06-01](https://github.com/DILCISBoard/SIARD/blob/master/SIARD%20
 
 SIARD 2.1 [2018-02-15](https://github.com/DILCISBoard/SIARD/blob/master/SIARD%202.1/format/2018-02-15/)
 
+# Recommendations
+
+Recommendation for storing large objects outside the SIARD file ver 0.28 [2018-08-28](github.com/DILCISBoard/SIARD/blob/master/SIARD%202.1/recommendations/2018-08-28/)
 
 # Tools
 Note that apart from the E-ARK tools supporting the SIARD Format there is also the SIARD Suite made by the SFA, which recently has been made open source.
