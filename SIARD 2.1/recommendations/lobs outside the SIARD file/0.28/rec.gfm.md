@@ -1,13 +1,10 @@
-![Logo of E-ARK](img/E-ARK_logo.png)![Logo of ICT PSP](img/ICT_PSP_r_logo.png)
+![Logo of E-ARK](img/E-ARK_logo.png)![Logo of ICT PSP](img/ICT_PSP_logo.png)
 
 **RECOMMENDATION**
 
 **for storing large objects outside the SIARD file**
-
 **Project Acronym:  E-ARK**
-
 **Grant Agreement Number: 620998**
-
 **Project Title:European Archival Records and Knowledge Preservation**
 
 |                                  |                                |
@@ -58,11 +55,9 @@
 
 1. **TABLE OF CONTENTS**
 
-[](#_Toc467248524)
+To be generated
 
-[](#_Toc467248524)
-
-1.  <span id="anchor"></span>**Introduction**
+# 1. Introduction
 
 This document is a recommendation for storing large objects outside the
 SIARD file, a feature introduced with the SIARD 2.0 Format
@@ -87,10 +82,7 @@ This recommendation will be used by the E-ARK open source tool Database
 Preservation Toolkit (DBPTK) for the export of relational databases to
 the SIARD 2.0 format.
 
-<span id="anchor-1"></span>
-
-1.  <span id="anchor-2"></span>**Methods for binary data handling in
-    relational databases**
+# 2 Methods for binary data handling in relational databases
 
 Binary data in regard to relational databases is defined as data for
 which no simple datatype (such as integer or date) exists. In addition
@@ -111,9 +103,7 @@ regardless of whether the handling was based on:
 3.  external indirect reference (file ID)- where BLOBs are stored as
     files.<span id="anchor-4"></span>
 
-<span id="anchor-5"></span>
-
-1.  <span id="anchor-6"></span>**Binary data handling in SQL Standards**
+# 3 Binary data handling in SQL Standards
 
 The first method using internal BLOBs has been available for many
 versions of the SQL standard. It is supported by all current relational
@@ -125,16 +115,14 @@ and as the Management of External Data
 standard. It is still poorly supported by current relational database
 management systems, and perhaps due to lack of a detailed specification
 in the SQL standard those RDBMS that support it do so
-differently.<span id="anchor-8"></span>
+differently.
 
-1.  <span id="anchor-9"></span>**Binary data handling in the SIARD 2.0
-    format**
+# 4. Binary data handling in the SIARD 2.0 format
 
 The SIARD 2.0 format is based on the SQL:2008 standard and other
-standards such as XML.<span id="anchor-10"></span>
+standards such as XML.
 
-1.  1.  <span id="anchor-11"></span>**Support for internal BLOBS
-        (ISO/IEC 9075-2:2008 - BLOBS) in SIARD 2.0**
+## 4.1 Support for internal BLOBS (ISO/IEC 9075-2:2008 - BLOBS) in SIARD 2.0
 
 The SIARD 2.0 format specification supports the SQL:2008 method for
 using internal BLOBS (ISO/IEC 9075-2:2008), as did SIARD 1.0 (SQL:1999).
@@ -148,8 +136,7 @@ table folder structure (a new feature in SIARD 2.0), but does not
 describe this in detail, it is left for recommendations like this one to
 describe their own implementations.<span id="anchor-12"></span>
 
-1.  1.  <span id="anchor-13"></span>**Support for external files
-        (ISO/IEC 9075-9:2008 – SQL/MED) in SIARD 2.0**
+## 4.2 Support for external files (ISO/IEC 9075-9:2008 – SQL/MED) in SIARD 2.0
 
 The SIARD 2.0 format does not support the SQL:2008 method for using
 external files (ISO/IEC 9075-9:2008 – SQL/MED) due to a lack of
