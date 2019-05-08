@@ -265,107 +265,60 @@ per folder limit *of 45,000 bytes. Therefore a new folder is created
 named Northwind\_lobseg\_2, and Row 8 will have its LOB from column 4
 ('Picture') (record7.bin) stored in it.
 
-<span id="anchor-23"></span>
 
-1.  1.  1.  <span id="anchor-24"></span>** Illustration of the folder
-            structure for the example**
 
-Northwind.siard *\<\!-- packaged as a ZIP file -\>*
+### 5.2.2 Illustration of the folder structure for the example
 
-content/
+```
+Northwind.siard <!-- packaged as a ZIP file ->
+	content/
+	header/
+		metadata.xml
+		metadata.xsd
+Northwind_lobseg_0/
+	content/schema0/table2/lob4/record0.bin <!-- row 1, col 4 has record0.bin ->
+	content/schema0/table2/lob4/record1.bin 
+	content/schema0/table2/lob4/record2.bin 
+	content/schema0/table2/lob4/record3.bin <!-- amount limit reached -->
+Northwind_lobseg_1/
+	content/schema0/table2/lob4/record4.bin 
+	content/schema0/table2/lob4/record5.bin 
+	content/schema0/table2/lob4/record6.bin <!-- size limit reached -->
+Northwind_lobseg_2/
+	content/schema0/table2/lob4/record7.bin
+```
 
-header/
+### 5.2.3 Extract of metadata.xml for the example
 
-metadata.xml
+```xml
+<dbname>Northwind</dbname>
+<dataOwner>...</dataOwner>
+<dataOriginTimespan>2015</dataOriginTimespan>
+<lobFolder>file:///Archives/Northwind/</lobFolder>
+```
 
-metadata.xsd
+### 5.2.4 Extract of table2.xml for the example
 
-Northwind\_lobseg\_0/
+```xml
+<row><c1>1</c1><c2>Beverages</c2><c3>Soft drinks, coffees, teas, beers, and ales</c3>
+<c4 file="Northwind_lobseg_0/content/schema0/table2/lob4/record0.bin" length="10151" messageDigest="md574f24080fc9d234d3ac221b8e743c763"/></row>
+<row><c1>2</c1><c2>Condiments</c2><c3>Sweet and savory sauces, relishes, spreads, and seasonings</c3>
+<c4 file="Northwind_lobseg_0/content/schema0/table2/lob4/record1.bin" length="12107" messageDigest="md522a0cbe8960b78ce48b07a285ce69e3c"/></row>
+<row><c1>3</c1><c2>Confections</c2><c3>Desserts, candies, and sweet breads</c3>
+<c4 file="Northwind_lobseg_0/content/schema0/table2/lob4/record2.bin" length="12007" messageDigest="md53e2f2028a9147c29bdcd36ed4e5f25b3"/></row>
+<row><c1>4</c1><c2>Dairy Products</c2><c3>Cheeses</c3>
+<c4 file="Northwind_lobseg_0/content/schema0/table2/lob4/record3.bin" length="9756" messageDigest="md512f588040e11cc2021ea37d46aa10c51"/></row>
+<row><c1>5</c1><c2>Grains/Cereals</c2><c3>Breads, crackers, pasta, and cereal</c3>
+<c4 file="Northwind_lobseg_1/content/schema0/table2/lob4/record4.bin" length="12131" messageDigest="md5e2d8ef03e1b24edd946820dbbf44fdfd"/></row>
+<row><c1>6</c1><c2>Meat/Poultry</c2><c3>Prepared meats</c3>
+<c4 file="Northwind_lobseg_1/content/schema0/table2/lob4/record5.bin" length="11280" messageDigest="md5814a3eb95253c08137f70bcfc279e00f"/></row>
+<row><c1>7</c1><c2>Produce</c2><c3>Dried fruit and bean curd</c3>
+<c4 file="Northwind_lobseg_1/content/schema0/table2/lob4/record6.bin" length="12338" messageDigest="md5ee114cd7700f566b1f7c7e8e0f68ca0f"/></row>
+<row><c1>8</c1><c2>Seafood</c2><c3>Seaweed and fish</c3>
+<c4 file="Northwind_lobseg_2/content/schema0/table2/lob4/record7.bin" length="12069" messageDigest="md52de1ac4c4e8ebb853e17db01af3fb7c3"/></row>
+```
 
-content/schema0/table2/lob4/record0.bin *\<\!-- row 1, col 4 has
-record0.bin -\>*
-
-content/schema0/table2/lob4/record1.bin 
-
-content/schema0/table2/lob4/record2.bin 
-
-content/schema0/table2/lob4/record3.bin *\<\!-- amount limit reached
---\>*
-
-Northwind\_lobseg\_1/
-
-content/schema0/table2/lob4/record4.bin 
-
-content/schema0/table2/lob4/record5.bin 
-
-content/schema0/table2/lob4/record6.bin *\<\!-- size limit reached --\>*
-
-Northwind\_lobseg\_2/
-
-content/schema0/table2/lob4/record7.bin
-
-1.  1.  1.  <span id="anchor-25"></span>**Extract of metadata.xml for
-            the example**
-
-\<dbname\>Northwind\</dbname\>
-
-\<dataOwner\>...\</dataOwner\>
-
-\<dataOriginTimespan\>2015\</dataOriginTimespan\>
-
-\<lobFolder\>file:///Archives/Northwind/\</lobFolder\>
-
-1.  1.  1.  <span id="anchor-26"></span>**Extract of table2.xml for the
-            example **
-
-\<row\>\<c1\>1\</c1\>\<c2\>Beverages\</c2\>\<c3\>Soft drinks, coffees,
-teas, beers, and ales\</c3\>  
-\<c4 file="Northwind\_lobseg\_0/content/schema0/table2/lob4/record0.bin"
-length="10151"
-messageDigest="md574f24080fc9d234d3ac221b8e743c763"/\>\</row\>
-
-\<row\>\<c1\>2\</c1\>\<c2\>Condiments\</c2\>\<c3\>Sweet and savory
-sauces, relishes, spreads, and seasonings\</c3\>  
-\<c4 file="Northwind\_lobseg\_0/content/schema0/table2/lob4/record1.bin"
-length="12107"
-messageDigest="md522a0cbe8960b78ce48b07a285ce69e3c"/\>\</row\>
-
-\<row\>\<c1\>3\</c1\>\<c2\>Confections\</c2\>\<c3\>Desserts, candies,
-and sweet breads\</c3\>  
-\<c4 file="Northwind\_lobseg\_0/content/schema0/table2/lob4/record2.bin"
-length="12007"
-messageDigest="md53e2f2028a9147c29bdcd36ed4e5f25b3"/\>\</row\>
-
-\<row\>\<c1\>4\</c1\>\<c2\>Dairy Products\</c2\>\<c3\>Cheeses\</c3\>  
-\<c4 file="Northwind\_lobseg\_0/content/schema0/table2/lob4/record3.bin"
-length="9756"
-messageDigest="md512f588040e11cc2021ea37d46aa10c51"/\>\</row\>
-
-\<row\>\<c1\>5\</c1\>\<c2\>Grains/Cereals\</c2\>\<c3\>Breads, crackers,
-pasta, and cereal\</c3\>  
-\<c4 file="Northwind\_lobseg\_1/content/schema0/table2/lob4/record4.bin"
-length="12131"
-messageDigest="md5e2d8ef03e1b24edd946820dbbf44fdfd"/\>\</row\>
-
-\<row\>\<c1\>6\</c1\>\<c2\>Meat/Poultry\</c2\>\<c3\>Prepared
-meats\</c3\>  
-\<c4 file="Northwind\_lobseg\_1/content/schema0/table2/lob4/record5.bin"
-length="11280"
-messageDigest="md5814a3eb95253c08137f70bcfc279e00f"/\>\</row\>
-
-\<row\>\<c1\>7\</c1\>\<c2\>Produce\</c2\>\<c3\>Dried fruit and bean
-curd\</c3\>  
-\<c4 file="Northwind\_lobseg\_1/content/schema0/table2/lob4/record6.bin"
-length="12338"
-messageDigest="md5ee114cd7700f566b1f7c7e8e0f68ca0f"/\>\</row\>
-
-\<row\>\<c1\>8\</c1\>\<c2\>Seafood\</c2\>\<c3\>Seaweed and fish\</c3\>  
-\<c4 file="Northwind\_lobseg\_2/content/schema0/table2/lob4/record7.bin"
-length="12069"
-messageDigest="md52de1ac4c4e8ebb853e17db01af3fb7c3"/\>\</row\>
-
-1.  1.  1.  <span id="anchor-27"></span>**Externally referenced files
-            according to RFC 1738 required and RFC 3986 recommended**
+### 5.2.5 Externally referenced files according to RFC 1738 required and RFC 3986 recommended
 
 According to the SIARD 2.0 format specification (G\_3.4-1) all
 externally referenced files are specified according to RFC 1738 “Uniform
