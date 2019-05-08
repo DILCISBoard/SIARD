@@ -1,4 +1,4 @@
-![](Pictures/10000000000002420000013270286F9742E7B31F.jpg)![](Pictures/1000020100000155000000DC90259469EA6A9F82.png)
+![Logo of E-ARK](img/E-ARK_logo.jpg)![Logo of ICT PSP](img/ICT_PSP_logo.png)
 
 **RECOMMENDATION**
 
@@ -26,192 +26,36 @@
 | Bruno Ferreira  | KEEPS                              |
 | Andreas Voss    | Swiss Federal Archives             |
 
-|                                                                                                              |                                                                                  |   |
-| ------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------- | - |
-| **Project co-funded by the European Commission within the ICT Policy Support Programme Dissemination Level** |                                                                                  |   |
-| **P**                                                                                                        | **Public**                                                                       | X |
-| **C**                                                                                                        | **Confidential, only for members of the Consortium and the Commission Services** |   |
+|                                                                                                              | | | 
+| ------------------------------------------------------------------------------------------------------------ |-|-| 
+| **Project co-funded by the European Commission within the ICT Policy Support Programme Dissemination Level** | | |  
+| **P** | **Public**                                                                       |                     X |
+| **C** | **Confidential, only for members of the Consortium and the Commission Services** |                       |
 
-<table>
-<tbody>
-<tr class="odd">
-<td><strong>REVISION HISTORY</strong></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><strong>Rev. No.</strong></td>
-<td><strong>Date</strong></td>
-<td><strong>Author(s)</strong></td>
-<td><strong>Organisation(s)</strong></td>
-<td><strong>Description</strong></td>
-</tr>
-<tr class="odd">
-<td>0.1</td>
-<td>15-05-2015</td>
-<td>Anders Bo Nielsen</td>
-<td>DNA</td>
-<td>First draft</td>
-</tr>
-<tr class="even">
-<td>0.5</td>
-<td>20-07-2015</td>
-<td>Anders Bo Nielsen</td>
-<td>DNA</td>
-<td>Revision</td>
-</tr>
-<tr class="odd">
-<td>0.8</td>
-<td>15-09-2015</td>
-<td>Anders Bo Nielsen</td>
-<td>DNA</td>
-<td>Revision</td>
-</tr>
-<tr class="even">
-<td>0.9</td>
-<td>15-10-2015</td>
-<td>Anders Bo Nielsen</td>
-<td>DNA</td>
-<td>Revision</td>
-</tr>
-<tr class="odd">
-<td>0.10</td>
-<td>13-11-2015</td>
-<td>Phillip Tømmerholt</td>
-<td>DNA</td>
-<td>Change of foldername containing dot “.” replaced with underscore “_”.</td>
-</tr>
-<tr class="even">
-<td>0.11</td>
-<td>30-11-2015</td>
-<td>Anders Bo Nielsen</td>
-<td>DNA</td>
-<td>Example updated</td>
-</tr>
-<tr class="odd">
-<td>0.12</td>
-<td>08-12-2015</td>
-<td>Phillip Tømmerholt</td>
-<td>DNA</td>
-<td>Example updated</td>
-</tr>
-<tr class="even">
-<td>0.13</td>
-<td>09-12-2015</td>
-<td>Phillip Tømmerholt</td>
-<td>DNA</td>
-<td>Example updated</td>
-</tr>
-<tr class="odd">
-<td>0.14</td>
-<td>19-01-2016</td>
-<td>Phillip Tømmerholt</td>
-<td>DNA</td>
-<td>Revision</td>
-</tr>
-<tr class="even">
-<td>0.16</td>
-<td>23-02-2016</td>
-<td>Anders Bo Nielsen</td>
-<td>DNA</td>
-<td>Typos corrected in XML example</td>
-</tr>
-<tr class="odd">
-<td>0.17</td>
-<td>23-04-2016</td>
-<td>Anders Bo Nielsen</td>
-<td>DNA</td>
-<td><p>Change URL syntax in value of file attribute.</p>
-<p>Add numbered sections and align styles</p></td>
-</tr>
-<tr class="even">
-<td>0.18</td>
-<td>03-05-2016</td>
-<td>Anders Bo Nielsen</td>
-<td>DNA</td>
-<td>Updating example</td>
-</tr>
-<tr class="odd">
-<td>0.19</td>
-<td>18-05-2016</td>
-<td>Anders Bo Nielsen</td>
-<td>DNA</td>
-<td>Naming convention for splitting binary files</td>
-</tr>
-<tr class="even">
-<td>0.20</td>
-<td>20-05-2016</td>
-<td>Anders Bo Nielsen</td>
-<td>DNA</td>
-<td>Update introduction</td>
-</tr>
-<tr class="odd">
-<td>0.21</td>
-<td>17-06-2016</td>
-<td>Anders Bo Nielsen</td>
-<td>DNA</td>
-<td>Correcting typos</td>
-</tr>
-<tr class="even">
-<td>0.22</td>
-<td>20-08-2016</td>
-<td>Anders Bo Nielsen</td>
-<td>DNA</td>
-<td>Changing format for headings</td>
-</tr>
-<tr class="odd">
-<td>0.23</td>
-<td>21-09-2016</td>
-<td>Anders Bo Nielsen</td>
-<td>DNA</td>
-<td>Example updated</td>
-</tr>
-<tr class="even">
-<td>0.24</td>
-<td>05-10-2016</td>
-<td>Anders Bo Nielsen</td>
-<td>DNA</td>
-<td>Terminology change</td>
-</tr>
-<tr class="odd">
-<td>0.25</td>
-<td>17-11-2016</td>
-<td>Anders Bo Nielsen</td>
-<td>DNA</td>
-<td>Example updated</td>
-</tr>
-<tr class="even">
-<td>0.26</td>
-<td>28-11-2016</td>
-<td><p>Anders Bo Nielsen</p>
-<p>Phillip Tømmerholt</p></td>
-<td><p>DNA</p>
-<p>DNA</p></td>
-<td><p>RFC 3968 added</p>
-<p>AnyURI def. added</p></td>
-</tr>
-<tr class="odd">
-<td>0.27</td>
-<td>12-09-2017</td>
-<td>Anders Bo Nielsen</td>
-<td>DNA</td>
-<td>Typos corrected</td>
-</tr>
-<tr class="even">
-<td>0.28</td>
-<td>30-08-2018</td>
-<td>Anders Bo Nielsen</td>
-<td>DNA</td>
-<td>Typos corrected</td>
-</tr>
-</tbody>
-</table>
+|				 |						|										|			|																																						|
+|--------|------------|-------------------|-----|---------------------------------------------------------------------------|
+| 0.1    | 15-05-2015 | Anders Bo Nielsen | DNA | First	draft			 |
+| 0.5 	 | 20-07-2015 | Anders Bo Nielsen | DNA | Revision 		     |
+| 0.8 	 | 15-09-2015 | Anders Bo Nielsen | DNA | Revision 		     |
+| 0.9 	 | 15-10-2015 | Anders Bo Nielsen | DNA | Revision 		     |
+| 0.10 	 | 13-11-2015 | Phillip Tømmerholt| DNA | Change of foldername containing dot “.” replaced with underscore “_”.      |
+| 0.11 	 | 30-11-2015 | Anders Bo Nielsen | DNA | Example updated 		        |
+| 0.12 	 | 08-12-2015 | Phillip Tømmerholt| DNA | Example updated 		        |
+| 0.13 	 | 09-12-2015 | Phillip Tømmerholt| DNA | Example updated 		        |
+| 0.14   | 19-01-2016 | Phillip Tømmerholt| DNA | Revision 		     |
+| 0.16   | 23-02-2016 | Anders Bo Nielsen | DNA | Typos corrected in XML example 		        |
+| 0.17   | 23-04-2016 | Anders Bo Nielsen | DNA | Change URL syntax in value of file attribute. Add numbered sections and align styles |
+| 0.18   | 03-05-2016 | Anders Bo Nielsen | DNA | Updating example 		        |
+| 0.19   | 18-05-2016 | Anders Bo Nielsen | DNA | Naming convention for splitting binary files 		        |
+| 0.20   | 20-05-2016 | Anders Bo Nielsen | DNA | Update introduction         |
+| 0.21 	 | 17-06-2016 | Anders Bo Nielsen | DNA | Correcting typos 		        |
+| 0.22   | 20-08-2016 | Anders Bo Nielsen | DNA | Changing format for headings|
+| 0.23   | 21-09-2016 | Anders Bo Nielsen | DNA | Example updated 		        |
+| 0.24   | 05-10-2016 | Anders Bo Nielsen | DNA | Terminology change 	        |
+| 0.25   | 17-11-2016 | Anders Bo Nielsen | DNA | Example updated 		        |
+| 0.26 	 | 28-11-2016 | Anders Bo Nielsen Phillip Tømmerholt | DNA RFC 3968 added AnyURI def. added 	     |
 
-**TABLE OF CONTENTS**
-
-1.  **Indholdsfortegnelse**
+1. **TABLE OF CONTENTS**
 
 [](#_Toc467248524)
 
