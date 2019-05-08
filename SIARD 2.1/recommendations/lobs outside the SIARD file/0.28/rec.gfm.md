@@ -32,9 +32,10 @@
 | **P** | **Public**                                                                       |                     X |
 | **C** | **Confidential, only for members of the Consortium and the Commission Services** |                       |
 
-|				 |						|										|			|																																						|
-|--------|------------|-------------------|-----|---------------------------------------------------------------------------|
-| 0.1    | 15-05-2015 | Anders Bo Nielsen | DNA | First	draft			 |
+
+|Rev. No.|Date        |Author(s)          |	Org.|Description         |		
+|--------|------------|-------------------|-----|--------------------|
+| 0.1    | 15-05-2015 | Anders Bo Nielsen | DNA | First	draft		 |
 | 0.5 	 | 20-07-2015 | Anders Bo Nielsen | DNA | Revision 		     |
 | 0.8 	 | 15-09-2015 | Anders Bo Nielsen | DNA | Revision 		     |
 | 0.9 	 | 15-10-2015 | Anders Bo Nielsen | DNA | Revision 		     |
@@ -53,7 +54,7 @@
 | 0.23   | 21-09-2016 | Anders Bo Nielsen | DNA | Example updated 		        |
 | 0.24   | 05-10-2016 | Anders Bo Nielsen | DNA | Terminology change 	        |
 | 0.25   | 17-11-2016 | Anders Bo Nielsen | DNA | Example updated 		        |
-| 0.26 	 | 28-11-2016 | Anders Bo Nielsen Phillip Tømmerholt | DNA RFC 3968 added AnyURI def. added 	     |
+| 0.26 	 | 28-11-2016 | Anders Bo Nielsen Phillip Tømmerholt | DNA              | RFC 3968 added AnyURI def. added 	     |
 
 1. **TABLE OF CONTENTS**
 
