@@ -328,28 +328,19 @@ has three forward slashes "/" before the file path, namely two in the
 protocol name, i.e. "file://", and one separating the protocol name from
 the file path (the host element is optional).
 
-5\. BNF for specific URL schemes
-
+```
+5. BNF for specific URL schemes
 ; FILE
-
-fileurl       = "file://" \[ host | "localhost" \] "/" fpath
-
-fpath         = fsegment \*\[ "/" fsegment \]
-
-fsegment      = \*\[ uchar | "?" | ":" | "@" | "&" | "=" \]
-
-uchar         = unreserved | escape
-
-unreserved    = alpha | digit | safe | extra
-
-alpha         = lowalpha | hialpha
-
-digit         = "0" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" |
-"9"
-
-safe          = "$" | "-" | "\_" | "." | "+"
-
-extra         = "\!" | "\*" | "'" | "(" | ")" | ","
+fileurl        = "file://" [ host | "localhost" ] "/" fpath
+fpath          = fsegment *[ "/" fsegment ]
+fsegment       = *[ uchar | "?" | ":" | "@" | "&" | "=" ]
+uchar          = unreserved | escape
+unreserved     = alpha | digit | safe | extra
+alpha          = lowalpha | hialpha
+digit          = "0" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9"
+safe           = "$" | "-" | "_" | "." | "+"
+extra          = "!" | "*" | "'" | "(" | ")" | ","
+```
 
 RFC 1738 is sufficient for defining a base URI, a requirement for
 relative paths in URI, but the use of relative paths in URI is more
@@ -359,10 +350,9 @@ explicitly specified in [RFC 3986](https://tools.ietf.org/html/rfc3986)
 is therefore recommended to use RFC 3968 to better understand the use of
 relative paths in a URI\[1\]. 
 
-The following excerpts are from RFC
-3698:
+The following excerpts are from RFC 3698:
 
-<span id="anchor-28"></span>[4.2](https://tools.ietf.org/html/rfc3986#section-4.2).
+[4.2](https://tools.ietf.org/html/rfc3986#section-4.2).
 Relative Reference
 
 A relative reference takes advantage of the hierarchical syntax
@@ -370,11 +360,12 @@ A relative reference takes advantage of the hierarchical syntax
 to express a URI reference relative to the name space of another
 hierarchical URI.  
   
-relative-ref = relative-part \[ "?" query \] \[ "\#" fragment \]  
-relative-part = "//" authority path-abempty  
-/ path-absolute  
-/ path-noscheme  
-/ path-empty
+```
+      relative-ref  = relative-part [ "?" query ] [ "#" fragment ]
+      relative-part = "//" authority path-abempty
+                    / path-absolute
+                    / path-noscheme
+                    / path-empty
 
 A relative reference that begins with two slash characters is termed a
 network-path reference; such references are rarely used.
@@ -385,56 +376,41 @@ an absolute-path reference.
 A relative reference that does not begin with a slash character is
 termed a relative-path
 reference.
-
 ...
 
-<span id="anchor-29"></span>[5.1](https://tools.ietf.org/html/rfc3986#section-5.1).
-Establishing a Base URI
+[5.1](https://tools.ietf.org/html/rfc3986#section-5.1) Establishing a Base URI
 
-<span id="anchor-30"></span>The term "relative" implies that a "base
-URI" exists against which the relative reference is applied. Aside from
-fragment-only references
-([*Section 4.4*](https://tools.ietf.org/html/rfc3986#section-4.4)),
+The term "relative" implies that a "base URI" exists against which the relative reference is applied. Aside from
+fragment-only references ([*Section 4.4*](https://tools.ietf.org/html/rfc3986#section-4.4)),
 relative references are only usable when a base URI is known. A base URI
 must be established by the parser prior to parsing URI references that
-might be relative. A base URI must conform to the \<absolute-URI\>
-syntax rule
-([*Section 4.3*](https://tools.ietf.org/html/rfc3986#section-4.3)).
-
+might be relative. A base URI must conform to the <absolute-URI> syntax rule ([*Section 4.3*](https://tools.ietf.org/html/rfc3986#section-4.3)).
 ...
 
-<span id="anchor-31"></span>[5.4](https://tools.ietf.org/html/rfc3986#section-5.4).
-Reference Resolution Examples
-
+[5.4](https://tools.ietf.org/html/rfc3986#section-5.4). Reference Resolution Examples
 Within a representation with a well defined base URI of  
-http://a/b/c/d;p?q  
+	http://a/b/c/d;p?q  
 a relative reference is transformed to its target URI as follows.  
   
-[5.4.1](https://tools.ietf.org/html/rfc3986#section-5.4.1). Normal
-Examples
+[5.4.1](https://tools.ietf.org/html/rfc3986#section-5.4.1). Normal Examples
 
-  
-"g:h"          = "g:h"  
-"g"            = "http://a/b/c/g"  
-"./g"          = "http://a/b/c/g"  
-"g/"           = "http://a/b/c/g/"
-
+	"g:h"          = "g:h"  
+	"g"            = "http://a/b/c/g"  
+	"./g"          = "http://a/b/c/g"  
+	"g/"           = "http://a/b/c/g/"
 ...
-
-According to the above RFC the base URI and the relative-path reference
-in the example for row 4 will resolve to this:
+```
+According to the above RFC the base URI and the relative-path reference in the example for row 4 will resolve to this:
 
 Base URI:  
-file:///Archives/Northwind/
-
+``` file:///Archives/Northwind/ ```
 Relative-path reference for row 4:
-Northwind\_lobseg\_0/content/schema0/table2/lob4/record0.bin
+``` Northwind\_lobseg\_0/content/schema0/table2/lob4/record0.bin ```
 
 Resolves into:
-file:///Archives/Northwind/Northwind\_lobseg\_0/content/schema0/table2/lob4/record0.bin
+``` file:///Archives/Northwind/Northwind\_lobseg\_0/content/schema0/table2/lob4/record0.bin ```
 
-<span id="anchor-32"></span>5.4.2 Directions from the XML standard,
-escaping spaces
+### 5.4.2 Directions from the XML standard, escaping spaces
 
 The SIARD 2.0 format uses the XML datatype xs:anyURI for representing
 URIs\[2\]*. *According to the W3C Recommendation\[3\] the datatype
