@@ -67,7 +67,9 @@
 [5 Recommendation for the folder structure for LOBs stored outside the SIARD file](#5-recommendation-for-the-folder-structure-for-lobs-stored-outside-the-siard-file)
 
 [5.1 "Generic" example](#51-generic-example)
+
 [5.2 Example with the example database Northwind](#52-example-with-the-example-database-northwind)
+
 [5.3 Splitting large files as binary chunks](#53-splitting-large-files-as-binary-chunks)
 
 # 1. Introduction
