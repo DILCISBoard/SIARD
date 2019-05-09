@@ -301,32 +301,32 @@ Northwind_lobseg_2/
 
 ```xml
 <row><c1>1</c1><c2>Beverages</c2><c3>Soft drinks, coffees, teas, beers, and ales</c3>
-<c4 file="Northwind_lobseg_0/content/schema0/table2/lob4/record0.bin" length="10151" messageDigest="md574f24080fc9d234d3ac221b8e743c763"/></row>
-
+<c4 file="Northwind_lobseg_0/content/schema0/table2/lob4/record0.bin" length="10151"
+	messageDigest="md574f24080fc9d234d3ac221b8e743c763"/></row>
 <row><c1>2</c1><c2>Condiments</c2><c3>Sweet and savory sauces, relishes, spreads, and seasonings</c3>
-<c4 file="Northwind_lobseg_0/content/schema0/table2/lob4/record1.bin" length="12107" messageDigest="md522a0cbe8960b78ce48b07a285ce69e3c"/></row>
-
+<c4 file="Northwind_lobseg_0/content/schema0/table2/lob4/record1.bin" length="12107"
+    messageDigest="md522a0cbe8960b78ce48b07a285ce69e3c"/></row>
 <row><c1>3</c1><c2>Confections</c2><c3>Desserts, candies, and sweet breads</c3>
-<c4 file="Northwind_lobseg_0/content/schema0/table2/lob4/record2.bin" length="12007" messageDigest="md53e2f2028a9147c29bdcd36ed4e5f25b3"/></row>
-
+<c4 file="Northwind_lobseg_0/content/schema0/table2/lob4/record2.bin" length="12007"
+    messageDigest="md53e2f2028a9147c29bdcd36ed4e5f25b3"/></row>
 <row><c1>4</c1><c2>Dairy Products</c2><c3>Cheeses</c3>
-<c4 file="Northwind_lobseg_0/content/schema0/table2/lob4/record3.bin" length="9756" messageDigest="md512f588040e11cc2021ea37d46aa10c51"/></row>
-
+<c4 file="Northwind_lobseg_0/content/schema0/table2/lob4/record3.bin" length="9756"
+    messageDigest="md512f588040e11cc2021ea37d46aa10c51"/></row>
 <row><c1>5</c1><c2>Grains/Cereals</c2><c3>Breads, crackers, pasta, and cereal</c3>
-<c4 file="Northwind_lobseg_1/content/schema0/table2/lob4/record4.bin" length="12131" messageDigest="md5e2d8ef03e1b24edd946820dbbf44fdfd"/></row>
-
+<c4 file="Northwind_lobseg_1/content/schema0/table2/lob4/record4.bin" length="12131"
+    messageDigest="md5e2d8ef03e1b24edd946820dbbf44fdfd"/></row>
 <row><c1>6</c1><c2>Meat/Poultry</c2><c3>Prepared meats</c3>
-<c4 file="Northwind_lobseg_1/content/schema0/table2/lob4/record5.bin" length="11280" messageDigest="md5814a3eb95253c08137f70bcfc279e00f"/></row>
-
+<c4 file="Northwind_lobseg_1/content/schema0/table2/lob4/record5.bin" length="11280"
+    messageDigest="md5814a3eb95253c08137f70bcfc279e00f"/></row>
 <row><c1>7</c1><c2>Produce</c2><c3>Dried fruit and bean curd</c3>
-<c4 file="Northwind_lobseg_1/content/schema0/table2/lob4/record6.bin" length="12338" messageDigest="md5ee114cd7700f566b1f7c7e8e0f68ca0f"/></row>
-
+<c4 file="Northwind_lobseg_1/content/schema0/table2/lob4/record6.bin" length="12338"
+    messageDigest="md5ee114cd7700f566b1f7c7e8e0f68ca0f"/></row>
 <row><c1>8</c1><c2>Seafood</c2><c3>Seaweed and fish</c3>
-<c4 file="Northwind_lobseg_2/content/schema0/table2/lob4/record7.bin" length="12069" messageDigest="md52de1ac4c4e8ebb853e17db01af3fb7c3"/></row>
+<c4 file="Northwind_lobseg_2/content/schema0/table2/lob4/record7.bin" length="12069"
+    messageDigest="md52de1ac4c4e8ebb853e17db01af3fb7c3"/></row>
 ```
 
 ### 5.2.5 Externally referenced files according to RFC 1738 required and RFC 3986 recommended
-
 According to the SIARD 2.0 format specification (G\_3.4-1) all
 externally referenced files are specified according to RFC 1738 “Uniform
 Resource Locators (URL)”, December 1994 -
@@ -440,7 +440,7 @@ can be seen on page 65 in the SIARD 2.0 format specification:
 
 It is recommended not to have space characters in the content of the
 *lobFolder* elements, as shown in this example:
-``` file:///Archives/Northwind/Northwind\_lobseg\_0/content/schema0/table2/lob4/record0.bin ``` 
+``` file:///Archives/Northwind/Northwind_lobseg_0/content/schema0/table2/lob4/record0.bin ``` 
 
 ##### 5.2.5.1.1 Algorithm prefix to hash value required
 
@@ -454,7 +454,6 @@ lower case. However, lower case is mostly used and enforced, see e.g.
 RFC 2831[](https://www.ietf.org/rfc/rfc2831.txt)
 
 ## 5.3 Splitting large files as binary chunks
-
 It may happen that a file itself is larger than the limit size for a
 folder (for example, it could be a movie). In that case the file itself
 will have to be binary divided into smaller pieces using the naming
