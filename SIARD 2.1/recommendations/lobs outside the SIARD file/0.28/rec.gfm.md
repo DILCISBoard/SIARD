@@ -302,18 +302,25 @@ Northwind_lobseg_2/
 ```xml
 <row><c1>1</c1><c2>Beverages</c2><c3>Soft drinks, coffees, teas, beers, and ales</c3>
 <c4 file="Northwind_lobseg_0/content/schema0/table2/lob4/record0.bin" length="10151" messageDigest="md574f24080fc9d234d3ac221b8e743c763"/></row>
+
 <row><c1>2</c1><c2>Condiments</c2><c3>Sweet and savory sauces, relishes, spreads, and seasonings</c3>
 <c4 file="Northwind_lobseg_0/content/schema0/table2/lob4/record1.bin" length="12107" messageDigest="md522a0cbe8960b78ce48b07a285ce69e3c"/></row>
+
 <row><c1>3</c1><c2>Confections</c2><c3>Desserts, candies, and sweet breads</c3>
 <c4 file="Northwind_lobseg_0/content/schema0/table2/lob4/record2.bin" length="12007" messageDigest="md53e2f2028a9147c29bdcd36ed4e5f25b3"/></row>
+
 <row><c1>4</c1><c2>Dairy Products</c2><c3>Cheeses</c3>
 <c4 file="Northwind_lobseg_0/content/schema0/table2/lob4/record3.bin" length="9756" messageDigest="md512f588040e11cc2021ea37d46aa10c51"/></row>
+
 <row><c1>5</c1><c2>Grains/Cereals</c2><c3>Breads, crackers, pasta, and cereal</c3>
 <c4 file="Northwind_lobseg_1/content/schema0/table2/lob4/record4.bin" length="12131" messageDigest="md5e2d8ef03e1b24edd946820dbbf44fdfd"/></row>
+
 <row><c1>6</c1><c2>Meat/Poultry</c2><c3>Prepared meats</c3>
 <c4 file="Northwind_lobseg_1/content/schema0/table2/lob4/record5.bin" length="11280" messageDigest="md5814a3eb95253c08137f70bcfc279e00f"/></row>
+
 <row><c1>7</c1><c2>Produce</c2><c3>Dried fruit and bean curd</c3>
 <c4 file="Northwind_lobseg_1/content/schema0/table2/lob4/record6.bin" length="12338" messageDigest="md5ee114cd7700f566b1f7c7e8e0f68ca0f"/></row>
+
 <row><c1>8</c1><c2>Seafood</c2><c3>Seaweed and fish</c3>
 <c4 file="Northwind_lobseg_2/content/schema0/table2/lob4/record7.bin" length="12069" messageDigest="md52de1ac4c4e8ebb853e17db01af3fb7c3"/></row>
 ```
@@ -404,13 +411,14 @@ According to the above RFC the base URI and the relative-path reference in the e
 
 Base URI:  
 ``` file:///Archives/Northwind/ ```
+
 Relative-path reference for row 4:
 ``` Northwind\_lobseg\_0/content/schema0/table2/lob4/record0.bin ```
 
 Resolves into:
 ``` file:///Archives/Northwind/Northwind\_lobseg\_0/content/schema0/table2/lob4/record0.bin ```
 
-### 5.4.2 Directions from the XML standard, escaping spaces
+#### 5.2.5.1 Directions from the XML standard, escaping spaces
 
 The SIARD 2.0 format uses the XML datatype xs:anyURI for representing
 URIs\[2\]*. *According to the W3C Recommendation\[3\] the datatype
@@ -426,33 +434,26 @@ their use is highly discouraged unless they are encoded as %20. For
 spaces in URIs the SIARD 2.0 format follows the W3C recommendation, as
 can be seen on page 65 in the SIARD 2.0 format specification:
 
-\<lobFolder\>file:///D:/Projekte/SIARD/SIARD%20Suite/\</lobFolder\>
+``` 
+<lobFolder>file:///D:/Projekte/SIARD/SIARD%20Suite/</lobFolder>
+``` 
 
 It is recommended not to have space characters in the content of the
-*lobFolder* elements, as shown in this
-example:
+*lobFolder* elements, as shown in this example:
+``` file:///Archives/Northwind/Northwind\_lobseg\_0/content/schema0/table2/lob4/record0.bin ``` 
 
-file:///Archives/Northwind/Northwind\_lobseg\_0/content/schema0/table2/lob4/record0.bin
+##### 5.2.5.1.1 Algorithm prefix to hash value required
 
-1.  1.  1.  1.  1.  <span id="anchor-33"></span>**Algorithm prefix to
-                    hash value required**
+Note that according to the SIARD 2.0 format specification the messageDigest value is prefixed with the algorithm followed by the hash value.
 
-Note that according to the SIARD 2.0 format specification the
-messageDigest value is prefixed with the algorithm followed by the hash
-value.
-
-1.  1.  1.  1.  1.  <span id="anchor-34"></span>**Lower case for
-                    messageDigest recommended **
+##### 5.2.5.1.2 Lower case for messageDigest recommended
 
 Note that the messageDigest indicates hexadecimal values and it is
 therefore not of strict importance whether they are set in upper or
 lower case. However, lower case is mostly used and enforced, see e.g.
-RFC 2831[
-](https://www.ietf.org/rfc/rfc2831.txt)[*https://www.ietf.org/rfc/rfc2831.txt*](https://www.ietf.org/rfc/rfc2831.txt)
+RFC 2831[](https://www.ietf.org/rfc/rfc2831.txt)
 
-[](https://www.ietf.org/rfc/rfc2831.txt)
-
-1.  1.  **Splitting large files as binary chunks**
+## 5.3 Splitting large files as binary chunks
 
 It may happen that a file itself is larger than the limit size for a
 folder (for example, it could be a movie). In that case the file itself
@@ -461,67 +462,44 @@ convention with the filename and an incremental suffix “.\[p\]” ending
 with “.z”.
 
 In the rough example below record n+14 is larger than the limit size for
-a folder so is split into 5 smaller files, with segment 0 set to a size
+a folder so it is split into 5 smaller files, with segment 0 set to a size
 filling up to the total file size limit.
 
 After the last segment z of the file is stored in folder
 \[databaseName\]\_lobseg\_\[h+4\]/ additional LOBs are stored in that
 folder. 
 
-  
 (Smaller size optimization is also acceptable, such as storing the 5
 segments alone in 5 lobseg\_ folders, i.e. not filling up to the actual
 file size limit.)
 
-\[databaseName\]\_lobseg\_\[h\]/
-
-content/schema\[i\]/table\[j\]/lob\[k\]/record\[n\].bin
-
-content/schema\[i\]/table\[j\]/lob\[k\]/record\[n+1\].bin
-
-..
-
-content/schema\[i\]/table\[j\]/lob\[k\]/record\[n+13\].bin
-
-content/schema\[i\]/table\[j\]/lob\[k\]/record\[n+14\].bin.0 
-
-\<\!-- large file splitted first seg --\>
-
-\<\!-- total file size limit per folder reached --\>
-
-\[databaseName\]\_lobseg\_\[h+1\]/
-
-content/schema\[i\]/table\[j\]/lob\[k\]/record\[n+14\].bin.1
-
-\<\!-- large file splitted seg 1--\>
-
-\<\!-- total file size limit per folder reached --\>
-
-\[databaseName\]\_lobseg\_\[h+2\]/
-
-content/schema\[i\]/table\[j\]/lob\[k\]/record\[n+14\].bin.2
-
-\<\!-- large file splitted seg 2--\>
-
-\<\!-- total file size limit per folder reached --\>
-
-\[databaseName\]\_lobseg\_\[h+3\]/
-
-content/schema\[i\]/table\[j\]/lob\[k\]/record\[n+14\].bin.3
-
-\<\!-- large file splitted seg 3--\>
-
-\<\!-- total file size limit per folder reached --\>
-
-\[databaseName\]\_lobseg\_\[h+4\]/
-
-content/schema\[i\]/table\[j\]/lob\[k\]/record\[n+14\].bin.z
-
-\<\!-- large file splitted last seg --\>
-
-content/schema\[i\]/table\[j\]/lob\[k\]/record\[n+15\].bin 
-
-content/schema\[i\]/table\[j\]/lob\[k\]/record\[n+16\].bin
+```
+[databaseName]_lobseg_[h]/
+	content/schema[i]/table[j]/lob[k]/record[n].bin
+	content/schema[i]/table[j]/lob[k]/record[n+1].bin
+	..
+	content/schema[i]/table[j]/lob[k]/record[n+13].bin
+	content/schema[i]/table[j]/lob[k]/record[n+14].bin.0 
+	<!-- large file splitted first seg -->
+	<!-- total file size limit per folder reached -->
+[databaseName]_lobseg_[h+1]/
+	content/schema[i]/table[j]/lob[k]/record[n+14].bin.1
+	<!-- large file splitted seg 1-->
+	<!-- total file size limit per folder reached -->
+[databaseName]_lobseg_[h+2]/
+	content/schema[i]/table[j]/lob[k]/record[n+14].bin.2
+	<!-- large file splitted seg 2-->
+	<!-- total file size limit per folder reached -->
+[databaseName]_lobseg_[h+3]/
+	content/schema[i]/table[j]/lob[k]/record[n+14].bin.3
+	<!-- large file splitted seg 3-->
+	<!-- total file size limit per folder reached -->
+[databaseName]_lobseg_[h+4]/
+	content/schema[i]/table[j]/lob[k]/record[n+14].bin.z
+	<!-- large file splitted last seg -->
+	content/schema[i]/table[j]/lob[k]/record[n+15].bin 
+	content/schema[i]/table[j]/lob[k]/record[n+16].bin
+```
 
 1.  <sup></sup>see also the draft:
     [*https://tools.ietf.org/html/draft-ietf-appsawg-file-scheme-03\#appendix-C.1.1*](https://tools.ietf.org/html/draft-ietf-appsawg-file-scheme-03#appendix-C.1.1)
