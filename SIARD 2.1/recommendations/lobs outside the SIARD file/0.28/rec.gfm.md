@@ -1,8 +1,8 @@
 ![Logo of E-ARK](img/E-ARK_logo.png)![Logo of ICT PSP](img/ICT_PSP_logo.png)
 
 **RECOMMENDATION**
-
 **for storing large objects outside the SIARD file**
+
 **Project Acronym:  E-ARK**
 **Grant Agreement Number: 620998**
 **Project Title:European Archival Records and Knowledge Preservation**
