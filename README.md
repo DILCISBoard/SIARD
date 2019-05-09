@@ -33,7 +33,7 @@ SIARD 2.1 [2018-02-15](https://github.com/DILCISBoard/SIARD/blob/master/SIARD%20
 
 ## Recommendations
 
-Recommendation for storing large objects outside the SIARD file ver 0.28 [2018-08-28](https://github.com/DILCISBoard/SIARD/blob/master/SIARD%202.1/recommendations/lobs%20outside%20the%20SIARD%20file/0.28/Recommendation%20for%20storing%20large%20objects%20outside%20the%20SIARD%20file%20ver%200.28.gd.odt)
+Recommendation for storing large objects outside the SIARD file ver 0.28 [2018-08-28](https://github.com/DILCISBoard/SIARD/blob/master/SIARD%202.1/recommendations/lobs%20outside%20the%20SIARD%20file/0.28/rec.gfm.md)
 
 ## Tools
 Note that apart from the E-ARK tools supporting the SIARD Format [Database Preservation Toolkit](http://www.database-preservation.com/) and [Database Visualization Toolkit](http://visualization.database-preservation.com/) there is also the [SIARD Suite](https://www.bar.admin.ch/bar/en/home/archiving/tools/siard-suite.html) made by the SFA, which recently has been made open source.
