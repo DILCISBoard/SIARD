@@ -7,25 +7,22 @@
 **Grant Agreement Number: 620998**
 **Project Title:European Archival Records and Knowledge Preservation**
 
-|                                  |                                |
-| -------------------------------- | ------------------------------ |
 | **AUTHOR(S)**                    |                                |
+| -------------------------------- | ------------------------------ |
 | **Name(s)**                      | **Organisation(s)**            |
 | Anders Bo Nielsen                | Danish National Archives (DNA) |
 | Kathrine Hougaard Edsen Johansen | Danish National Archives (DNA) |
 | Phillip Tømmerholt               | Danish National Archives (DNA) |
 
-|                 |                                    |
-| --------------- | ---------------------------------- |
 | **REVIEWER(S)** |                                    |
+| --------------- | ---------------------------------- |
 | **Name(s)**     | **Organisation(s)**                |
 | Kuldar Aas      | National Archives of Estonia (NAE) |
 | Bruno Ferreira  | KEEPS                              |
 | Andreas Voss    | Swiss Federal Archives             |
 
-|                                                                                                              | | | 
+| **Project co-funded by the European Commission within the ICT Policy Support Programme Dissemination Level** | | | 
 | ------------------------------------------------------------------------------------------------------------ |-|-| 
-| **Project co-funded by the European Commission within the ICT Policy Support Programme Dissemination Level** | | |  
 | **P** | **Public**                                                                       |                     X |
 | **C** | **Confidential, only for members of the Consortium and the Commission Services** |                       |
 
@@ -33,25 +30,25 @@
 |Rev. No.|Date        |Author(s)          |	Org.|Description         |		
 |--------|------------|-------------------|-----|--------------------|
 | 0.1    | 15-05-2015 | Anders Bo Nielsen | DNA | First	draft		 |
-| 0.5 	 | 20-07-2015 | Anders Bo Nielsen | DNA | Revision 		     |
-| 0.8 	 | 15-09-2015 | Anders Bo Nielsen | DNA | Revision 		     |
-| 0.9 	 | 15-10-2015 | Anders Bo Nielsen | DNA | Revision 		     |
+| 0.5 	 | 20-07-2015 | Anders Bo Nielsen | DNA | Revision 		 |
+| 0.8 	 | 15-09-2015 | Anders Bo Nielsen | DNA | Revision 		 |
+| 0.9 	 | 15-10-2015 | Anders Bo Nielsen | DNA | Revision 		 |
 | 0.10 	 | 13-11-2015 | Phillip Tømmerholt| DNA | Change of foldername containing dot “.” replaced with underscore “_”.      |
 | 0.11 	 | 30-11-2015 | Anders Bo Nielsen | DNA | Example updated 		        |
 | 0.12 	 | 08-12-2015 | Phillip Tømmerholt| DNA | Example updated 		        |
 | 0.13 	 | 09-12-2015 | Phillip Tømmerholt| DNA | Example updated 		        |
-| 0.14   | 19-01-2016 | Phillip Tømmerholt| DNA | Revision 		     |
+| 0.14   | 19-01-2016 | Phillip Tømmerholt| DNA | Revision 		  |
 | 0.16   | 23-02-2016 | Anders Bo Nielsen | DNA | Typos corrected in XML example 		        |
 | 0.17   | 23-04-2016 | Anders Bo Nielsen | DNA | Change URL syntax in value of file attribute. Add numbered sections and align styles |
 | 0.18   | 03-05-2016 | Anders Bo Nielsen | DNA | Updating example 		        |
 | 0.19   | 18-05-2016 | Anders Bo Nielsen | DNA | Naming convention for splitting binary files 		        |
 | 0.20   | 20-05-2016 | Anders Bo Nielsen | DNA | Update introduction         |
-| 0.21 	 | 17-06-2016 | Anders Bo Nielsen | DNA | Correcting typos 		        |
+| 0.21 	 | 17-06-2016 | Anders Bo Nielsen | DNA | Correcting typos 	      |
 | 0.22   | 20-08-2016 | Anders Bo Nielsen | DNA | Changing format for headings|
-| 0.23   | 21-09-2016 | Anders Bo Nielsen | DNA | Example updated 		        |
-| 0.24   | 05-10-2016 | Anders Bo Nielsen | DNA | Terminology change 	        |
-| 0.25   | 17-11-2016 | Anders Bo Nielsen | DNA | Example updated 		        |
-| 0.26 	 | 28-11-2016 | Anders Bo Nielsen Phillip Tømmerholt | DNA              | RFC 3968 added AnyURI def. added 	     |
+| 0.23   | 21-09-2016 | Anders Bo Nielsen | DNA | Example updated 	      |
+| 0.24   | 05-10-2016 | Anders Bo Nielsen | DNA | Terminology change 	      |
+| 0.25   | 17-11-2016 | Anders Bo Nielsen | DNA | Example updated 	      |
+| 0.26 	 | 28-11-2016 | Anders Bo Nielsen Phillip Tømmerholt | DNA            | RFC 3968 added AnyURI def. added 	     |
 
 1. **TABLE OF CONTENTS**
 
@@ -501,7 +498,7 @@ file size limit.)
 	content/schema[i]/table[j]/lob[k]/record[n+16].bin
 ```
 
-[1]:1.  <sup></sup>see also the draft:
+1.  <sup></sup>see also the draft:
     [*https://tools.ietf.org/html/draft-ietf-appsawg-file-scheme-03\#appendix-C.1.1*](https://tools.ietf.org/html/draft-ietf-appsawg-file-scheme-03#appendix-C.1.1)
     
 
