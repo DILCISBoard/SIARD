@@ -384,9 +384,9 @@ A relative reference that does not begin with a slash character is
 termed a relative-path
 reference.
 ...
+```
 
 [5.1](https://tools.ietf.org/html/rfc3986#section-5.1) Establishing a Base URI
-
 The term "relative" implies that a "base URI" exists against which the relative reference is applied. Aside from
 fragment-only references ([*Section 4.4*](https://tools.ietf.org/html/rfc3986#section-4.4)),
 relative references are only usable when a base URI is known. A base URI
@@ -395,12 +395,13 @@ might be relative. A base URI must conform to the <absolute-URI> syntax rule ([*
 ...
 
 [5.4](https://tools.ietf.org/html/rfc3986#section-5.4). Reference Resolution Examples
+```
 Within a representation with a well defined base URI of  
 	http://a/b/c/d;p?q  
 a relative reference is transformed to its target URI as follows.  
-  
+```  
 [5.4.1](https://tools.ietf.org/html/rfc3986#section-5.4.1). Normal Examples
-
+```
 	"g:h"          = "g:h"  
 	"g"            = "http://a/b/c/g"  
 	"./g"          = "http://a/b/c/g"  
@@ -500,7 +501,7 @@ file size limit.)
 	content/schema[i]/table[j]/lob[k]/record[n+16].bin
 ```
 
-1.  <sup></sup>see also the draft:
+[1]:1.  <sup></sup>see also the draft:
     [*https://tools.ietf.org/html/draft-ietf-appsawg-file-scheme-03\#appendix-C.1.1*](https://tools.ietf.org/html/draft-ietf-appsawg-file-scheme-03#appendix-C.1.1)
     
 
