@@ -50,12 +50,24 @@
 | 0.25   | 17-11-2016 | Anders Bo Nielsen | DNA | Example updated 	      |
 | 0.26 	 | 28-11-2016 | Anders Bo Nielsen Phillip Tømmerholt | DNA            | RFC 3968 added AnyURI def. added 	     |
 
-1. **TABLE OF CONTENTS**
+# TABLE OF CONTENTS
 
-To be generated
+[1. Introduction](#1-introduction)
+[2 Methods for binary data handling in relational databases](#2-methods-for-binary-data-handling-in-relational-databases)
+[3 Binary data handling in SQL Standards](#3-binary-data-handling-in-sql-standards)
+[4. Binary data handling in the SIARD 2.0 format](#binary-data-handling-in-the-siard-2.0-format)
+
+[4.1 Support for internal BLOBS (ISO/IEC 9075-2:2008 - BLOBS) in SIARD 2.0](#4.1-support-for-internal-blobs-(iso/iec-9075-2:2008 --blobs)-in-siard-2.0)
+
+[4.2 Support for external files (ISO/IEC 9075-9:2008 – SQL/MED) in SIARD 2.0](#4.2-support-for-external-files-isoiec-9075-9-2008-sql/med)-in-siard-20)
+
+[5 Recommendation for the folder structure for LOBs stored outside the SIARD file](#recommendation-for-the-folder-structure-for-lobs-stored-outside-the-siard-file)
+
+[5.1 "Generic" example](#5.1-"generic"-example)
+[5.2 Example with the example database Northwind](#5.2-example-with-the-example-database-northwind)
+[5.3 Splitting large files as binary chunks](#5.3-splitting-large-files-as-binary-chunks)
 
 # 1. Introduction
-
 This document is a recommendation for storing large objects outside the
 SIARD file, a feature introduced with the SIARD 2.0 Format
 Specification.
@@ -80,7 +92,6 @@ Preservation Toolkit (DBPTK) for the export of relational databases to
 the SIARD 2.0 format.
 
 # 2 Methods for binary data handling in relational databases
-
 Binary data in regard to relational databases is defined as data for
 which no simple datatype (such as integer or date) exists. In addition
 the size of binary data is also important due to the need for efficient
@@ -101,7 +112,6 @@ regardless of whether the handling was based on:
     files.<span id="anchor-4"></span>
 
 # 3 Binary data handling in SQL Standards
-
 The first method using internal BLOBs has been available for many
 versions of the SQL standard. It is supported by all current relational
 database management systems.<span id="anchor-7"></span>
