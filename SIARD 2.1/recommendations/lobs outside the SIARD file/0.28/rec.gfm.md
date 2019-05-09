@@ -434,10 +434,10 @@ Resolves into:
 #### 5.2.5.1 Directions from the XML standard, escaping spaces
 
 The SIARD 2.0 format uses the XML datatype xs:anyURI for representing
-URIs[2]. According to the W3C Recommendation\[3\] the datatype
+URIs [2]. According to the W3C Recommendation\[3\] the datatype
 xs:anyURI can have values that can be absolute or relative, and may have
 optional fragment identifiers. The W3C recommendation refers to RFC
-2396\[4\] and RFC 2732\[5\] for definitions.
+2396 [4] and RFC 2732 [5] for definitions.
 [RFC 2396](http://www.w3.org/TR/xmlschema-2/#RFC2396) and RFC 2732 are
 the standards that lie between RFC 1738 and the most current RFC 3698,
 all of which are already presented in this recommendation. The W3C
@@ -513,21 +513,21 @@ file size limit.)
 	content/schema[i]/table[j]/lob[k]/record[n+16].bin
 ```
 
-1.  <sup></sup>see also the draft:
+[1]: <sup></sup>see also the draft:
     [*https://tools.ietf.org/html/draft-ietf-appsawg-file-scheme-03\#appendix-C.1.1*](https://tools.ietf.org/html/draft-ietf-appsawg-file-scheme-03#appendix-C.1.1)
     
 
 [2]: <sup></sup> see *“Appendix D – XML Schema Definitions” in SIARD 2.0 Format Specification.*
 
-3.  <sup></sup> W3C recommendation. XML Schema Part 2: Datatypes Second
+[3]:  <sup></sup> W3C recommendation. XML Schema Part 2: Datatypes Second
     Edition. 28 October 2004. Available at:
     [*http://www.w3.org/TR/xmlschema-2/*](http://www.w3.org/TR/xmlschema-2/)
     
 
-4.  <sup></sup> Tim Berners-Lee, et. al. *RFC 2396: Uniform Resource
+[4]:  <sup></sup> Tim Berners-Lee, et. al. *RFC 2396: Uniform Resource
     Identifiers (URI): Generic Syntax.*. 1998. Available at:[
     ](http://www.ietf.org/rfc/rfc2396.txt)[*http://www.ietf.org/rfc/rfc2396.txt*](http://www.ietf.org/rfc/rfc2396.txt)
 
-5.  <sup></sup> R. Hinden. et al. *RFC 2732: Format for Literal IPv6
+[5]:  <sup></sup> R. Hinden. et al. *RFC 2732: Format for Literal IPv6
     Addresses in URL's*. 1999. Available at:[
     ](http://www.ietf.org/rfc/rfc2732.txt)[*http://www.ietf.org/rfc/rfc2732.txt*](http://www.ietf.org/rfc/rfc2732.txt)
