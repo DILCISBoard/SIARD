@@ -53,19 +53,22 @@
 # TABLE OF CONTENTS
 
 [1. Introduction](#1-introduction)
+
 [2 Methods for binary data handling in relational databases](#2-methods-for-binary-data-handling-in-relational-databases)
+
 [3 Binary data handling in SQL Standards](#3-binary-data-handling-in-sql-standards)
-[4. Binary data handling in the SIARD 2.0 format](#binary-data-handling-in-the-siard-2.0-format)
 
-[4.1 Support for internal BLOBS (ISO/IEC 9075-2:2008 - BLOBS) in SIARD 2.0](#4.1-support-for-internal-blobs-(iso/iec-9075-2:2008 --blobs)-in-siard-2.0)
+[4. Binary data handling in the SIARD 2.0 format](#4-binary-data-handling-in-the-siard-20-format)
 
-[4.2 Support for external files (ISO/IEC 9075-9:2008 – SQL/MED) in SIARD 2.0](#4.2-support-for-external-files-isoiec-9075-9-2008-sql/med)-in-siard-20)
+[4.1 Support for internal BLOBS (ISO/IEC 9075-2:2008 - BLOBS) in SIARD 2.0](#41-support-for-internal-blobs-isoiec-9075-22008---blobs-in-siard-20)
 
-[5 Recommendation for the folder structure for LOBs stored outside the SIARD file](#recommendation-for-the-folder-structure-for-lobs-stored-outside-the-siard-file)
+[4.2 Support for external files (ISO/IEC 9075-9:2008 – SQL/MED) in SIARD 2.0](#42-support-for-external-files-isoiec-9075-92008--sqlmed-in-siard-20)
 
-[5.1 "Generic" example](#5.1-"generic"-example)
-[5.2 Example with the example database Northwind](#5.2-example-with-the-example-database-northwind)
-[5.3 Splitting large files as binary chunks](#5.3-splitting-large-files-as-binary-chunks)
+[5 Recommendation for the folder structure for LOBs stored outside the SIARD file](#5-recommendation-for-the-folder-structure-for-lobs-stored-outside-the-siard-file)
+
+[5.1 "Generic" example](#51-"generic"-example)
+[5.2 Example with the example database Northwind](#52-example-with-the-example-database-northwind)
+[5.3 Splitting large files as binary chunks](#53-splitting-large-files-as-binary-chunks)
 
 # 1. Introduction
 This document is a recommendation for storing large objects outside the
