@@ -434,7 +434,7 @@ Resolves into:
 #### 5.2.5.1 Directions from the XML standard, escaping spaces
 
 The SIARD 2.0 format uses the XML datatype xs:anyURI for representing
-URIs\[2\]*. *According to the W3C Recommendation\[3\] the datatype
+URIs[2]. According to the W3C Recommendation\[3\] the datatype
 xs:anyURI can have values that can be absolute or relative, and may have
 optional fragment identifiers. The W3C recommendation refers to RFC
 2396\[4\] and RFC 2732\[5\] for definitions.
@@ -517,8 +517,7 @@ file size limit.)
     [*https://tools.ietf.org/html/draft-ietf-appsawg-file-scheme-03\#appendix-C.1.1*](https://tools.ietf.org/html/draft-ietf-appsawg-file-scheme-03#appendix-C.1.1)
     
 
-2.  <sup></sup> see *“Appendix D – XML Schema Definitions” in SIARD 2.0
-    Format Specification.*
+[2]: <sup></sup> see *“Appendix D – XML Schema Definitions” in SIARD 2.0 Format Specification.*
 
 3.  <sup></sup> W3C recommendation. XML Schema Part 2: Datatypes Second
     Edition. 28 October 2004. Available at:
