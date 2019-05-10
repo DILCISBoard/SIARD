@@ -35,8 +35,8 @@ SIARD 2.1 [2018-02-15](https://github.com/DILCISBoard/SIARD/blob/master/SIARD%20
 
 Recommendation for storing large objects outside the SIARD file ver 0.28 [2018-08-28](https://github.com/DILCISBoard/SIARD/tree/master/SIARD%202.1/recommendations/lobs%20outside%20the%20SIARD%20file/0.28)
 Available in formats 
-[Github Markdown](https://github.com/DILCISBoard/SIARD/blob/master/SIARD%202.1/recommendations/lobs%20outside%20the%20SIARD%20file/0.28/Recommendation%20for%20storing%20large%20object%20outside%20the%20SIARD%20file.gfm.md)
-[PDF](https://github.com/DILCISBoard/SIARD/blob/master/SIARD%202.1/recommendations/lobs%20outside%20the%20SIARD%20file/0.28/Recommendation%20for%20storing%20large%20objects%20outside%20the%20SIARD%20file%20ver%200.28.gd.odt)
+[Github Markdown](/SIARD%202.1/recommendations/lobs%20outside%20the%20SIARD%20file/0.28/Recommendation%20for%20storing%20large%20object%20outside%20the%20SIARD%20file.gfm.md)
+[PDF](https://github.com/DILCISBoard/SIARD/blob/master/SIARD%202.1/recommendations/lobs%20outside%20the%20SIARD%20file/0.28/Recommendation%20for%20storing%20large%20objects%20outside%20the%20SIARD%20file%20ver%200.28.gd.pdf)
 and [Open Document Text](https://github.com/DILCISBoard/SIARD/blob/master/SIARD%202.1/recommendations/lobs%20outside%20the%20SIARD%20file/0.28/Recommendation%20for%20storing%20large%20objects%20outside%20the%20SIARD%20file%20ver%200.28.gd.odt)
 
 ## Tools
