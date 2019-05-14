@@ -14,7 +14,7 @@ The SIARD 2.0 format was developed in 2015 by the Swiss Federal Archives and the
 
 The SIARD 2.1 format was developed in 2018 by the SFA after the end of the E-ARK project.
 
-SIARD 1.0 and 2.0 are also official Swiss E-Government Standards and can be found [here](https://www.ech.ch/vechweb/page?p=dossier&documentNumber=eCH-0165&documentVersion=2.0)
+SIARD 1.0 and 2.0 are also official Swiss E-Government Standards and version 1.0 can be found [here](https://www.ech.ch/vechweb/page?p=dossier&documentNumber=eCH-0165&documentVersion=2.0) and version 2.0 [here](https://github.com/DILCISBoard/SIARD/blob/master/SIARD%202.0/format/2016-06-01/STAN_e_DEF_2016-08-02_eCH-0165_V2.0_SIARD-Format.pdf). (version 2.0 is currently not available at ech.ch).
 
 SIARD 2.1 is not an official Swiss E-Government Standard, but can be found [here](https://www.bar.admin.ch/dam/bar/de/dokumente/kundeninformation/siard_formatbeschreibung.pdf.download.pdf/siard_formatbeschreibung.pdf  
 ) at the SFA website.
