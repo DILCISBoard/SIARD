@@ -234,9 +234,8 @@ Region (table12)
 
 Only the table 'Categories' (table2) below is used in this example
 
-|            |                |                                                            |                                                |
-| ---------- | -------------- | ---------------------------------------------------------- | ---------------------------------------------- |
-| CategoryID | CategoryName   | Description                                                | Picture                                        
+| CategoryID | CategoryName   | Description                                                | Picture          |                              
+| ---------- | -------------- | ---------------------------------------------------------- |----------------- |
 | 1          | Beverages      | Soft drinks, coffees, teas, beers, and ales                | BLOB (Size: 10151)
 | 2          | Condiments     | Sweet and savory sauces, relishes, spreads, and seasonings | BLOB (Size: 12107)
 | 3          | Confections    | Desserts, candies, and sweet breads                        | BLOB (Size: 12007)                             
