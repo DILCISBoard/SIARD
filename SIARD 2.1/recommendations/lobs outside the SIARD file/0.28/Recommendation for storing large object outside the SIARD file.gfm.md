@@ -399,6 +399,7 @@ reference.
 ```
 
 [5.1](https://tools.ietf.org/html/rfc3986#section-5.1) Establishing a Base URI
+
 The term "relative" implies that a "base URI" exists against which the relative reference is applied. Aside from
 fragment-only references ([*Section 4.4*](https://tools.ietf.org/html/rfc3986#section-4.4)),
 relative references are only usable when a base URI is known. A base URI
