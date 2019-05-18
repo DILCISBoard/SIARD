@@ -49,6 +49,8 @@
 | 0.24   | 05-10-2016 | Anders Bo Nielsen | DNA | Terminology change 	      |
 | 0.25   | 17-11-2016 | Anders Bo Nielsen | DNA | Example updated 	      |
 | 0.26 	 | 28-11-2016 | Anders Bo Nielsen Phillip Tømmerholt | DNA            | RFC 3968 added AnyURI def. added 	     |
+| 0.27   | 12-09-2017 | Anders Bo Nielsen | DNA | Typos corrected             |
+| 0.28   | 30-08-2018 | Anders Bo Nielsen | DNA | Typos corrected             |
 
 # TABLE OF CONTENTS
 
