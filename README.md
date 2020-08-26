@@ -19,17 +19,21 @@ SIARD 1.0 and 2.0 are also official Swiss E-Government Standards and version 1.0
 SIARD 2.1 is not an official Swiss E-Government Standard, but can be found [here](https://www.bar.admin.ch/dam/bar/de/dokumente/kundeninformation/siard_formatbeschreibung.pdf.download.pdf/siard_formatbeschreibung.pdf  
 ) at the SFA website.
 
+SIARD 2.1.1. is a correction to SIARD 2.1
+
 The development and release of new versions will be coordinated in the DILCIS board (associated with the DLM Forum, created by the EC in 1994) following procedures proposed by the SFA.
 
 The SFA is represented in the DILCIS board (as well as in DLM Forum) together with other national archives using SIARD.
 
 ## Specifications
 
-SIARD 1.0 [2008-09-30](https://github.com/DILCISBoard/SIARD/blob/master/SIARD%201.0/format/2008-09-30/) 
+SIARD 1.0   [2008-09-30](https://github.com/DILCISBoard/SIARD/blob/master/SIARD%201.0/format/2008-09-30/) 
 
-SIARD 2.0 [2016-06-01](https://github.com/DILCISBoard/SIARD/blob/master/SIARD%202.0/format/2016-06-01/)
+SIARD 2.0   [2016-06-01](https://github.com/DILCISBoard/SIARD/blob/master/SIARD%202.0/format/2016-06-01/)
 
-SIARD 2.1 [2018-02-15](https://github.com/DILCISBoard/SIARD/blob/master/SIARD%202.1/format/2018-02-15/)
+SIARD 2.1   [2018-02-15](https://github.com/DILCISBoard/SIARD/blob/master/SIARD%202.1/format/2018-02-15/)
+
+SIARD 2.1.1 [2019-05-15](https://github.com/DILCISBoard/SIARD/blob/master/SIARD%202.1/format/2018-02-15/)
 
 ## Recommendations
 
