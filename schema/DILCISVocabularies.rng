@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grammar ns="https://DILCIS.eu/XML/Vocabularies/IP" xmlns="http://relaxng.org/ns/structure/1.0" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+  <!-- Schema for vocabularies in E-ARK for Information Packages -->
+  <start>
+    <element name="Vocabularies">
+      <oneOrMore>
+        <element name="Vocabulary">
+          <attribute name="Name">
+            <data type="NCName"/>
+          </attribute>
+          <optional>
+                <element name="Information">
+                  <oneOrMore>
+                    <element name="p">
+                      <text/>
+                    </element>
+                  </oneOrMore>
+                </element>
+              </optional>
+          <oneOrMore>
+            <element name="Entry">
+              
+              <element name="Term">
+              <attribute name="lang">
+                <data type="NCName"/>
+              </attribute>
+              <text/>
+            </element>
+              <element name="Definition">
+                <text/>
+              </element>
+            </element>            
+          </oneOrMore>
+        </element>
+      </oneOrMore>
+    </element>
+  </start>
+</grammar>

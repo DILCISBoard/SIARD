@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="DILCISVocabularies.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<Vocabularies xmlns="https://DILCIS.eu/XML/Vocabularies/IP">
+    <Vocabulary Name="VocabularyFileGrpAndStructMapDivisionLabel">
+        <Information>
+            <p>Vocabulary derived from E-ARK</p>
+        </Information>
+        <Entry>
+            <Term lang="en">Documentation</Term>
+            <Definition>The file group or structural division contains documentation</Definition>
+        </Entry>
+        <Entry>
+            <Term lang="en">Schemas</Term>
+            <Definition>The file group or structural division contains XML-schemas</Definition>
+        </Entry>
+        <Entry>
+            <Term lang="en">Representations</Term>
+            <Definition>The file group or structural division contains data or representation data</Definition>
+        </Entry>
+        <Entry>
+            <Term lang="en">Metadata</Term>
+            <Definition>The structural division contains metadata</Definition>
+        </Entry>
+    </Vocabulary>
+</Vocabularies>

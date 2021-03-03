@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="DILCISVocabularies.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<Vocabularies xmlns="https://DILCIS.eu/XML/Vocabularies/IP">
+    <Vocabulary Name="VocabularyAgentOtherType">
+        <Information>
+            <p>Vocabulary derived from E-ARK</p>
+        </Information>
+        <Entry>
+            <Term lang="en">SOFTWARE</Term>
+            <Definition>The agent is of the type software</Definition>
+        </Entry>
+    </Vocabulary>
+</Vocabularies>

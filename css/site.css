@@ -1,0 +1,144 @@
+@import "github.css";
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.42857143;
+    color: #444444;
+    background-color: #ffffff;
+}
+
+#nav-wrap {
+  background-color: #0077bb;
+}
+
+li.nav-item {
+    margin-left: 30px;
+    padding-bottom: 0;
+}
+
+#navbar-main, ul.dropdown-menu {
+    border: 0;
+    border-bottom: 1px solid #0067a2;
+    background-color: #0077bb;
+    margin-bottom: 0;
+    border-radius: 0;
+    padding: 0;
+    font-size: 14px;
+}
+
+a.navbar-brand  img {
+  background-color: #0077bb;
+}
+
+.navbar-brand {
+  background-color: #0077bb;
+  padding: 0;
+}
+
+a.nav-link {
+  color: #bbe6ff;
+  text-transform: uppercase;
+  position: relative;
+  display: block;
+  line-height: 40px;
+  font-size: 14px;
+}
+
+li.active {
+  box-shadow: inset 0 -2px 0 #ffffff;
+  color: #ffffff;
+  background-color: transparent;
+}
+
+a.dropdown-toggle {
+  margin-left: 30px;
+  color: #bbe6ff;
+  text-transform: uppercase;
+  line-height: 40px;
+}
+
+li.dropdown {
+  display: block;
+  padding: .5rem 1rem;
+  padding-right: .5rem;
+  padding-left: .5rem;
+}
+
+section.copyright {
+  border-top: 1px solid #eeeeee;
+  font-size: 12px;
+  padding: 40px 0 80px;
+  background: #f7f7f7;
+  color: #666666;
+  line-height: 1.42857143;
+  font-size: 12px;
+}
+
+.custom h5 {
+  font-size: 14px;
+}
+
+.custom h6 {
+  font-size: 12px;
+}
+
+.container img {
+  max-width: 100%;
+  box-sizing: content-box;
+  background-color: #fff;
+}
+
+.container > table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+  margin-top: 0;
+  margin-bottom: 16px;
+  border-color: grey;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.container thead {
+  display: table-header-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+
+.container tr {
+  background-color: #fff;
+  border-top: 1px solid #c6cbd1;
+  box-sizing: border-box;
+  display: table-row;
+  vertical-align: inherit;
+  border-color: inherit;
+}
+
+.container th {
+  padding: 6px 13px;
+  border: 1px solid #dfe2e5;
+  font-weight: 600;
+  display: table-cell;
+  vertical-align: inherit;
+  text-align: -internal-center;
+}
+
+.container tbody {
+  display: table-row-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+
+.container td {
+  padding: 6px 13px;
+  border: 1px solid #dfe2e5;
+}
+
+.container table tr:nth-child(2n) {
+    background-color: #f6f8fa;
+}
+
+td code.highlighter-rouge {
+  color: #d60766;
+}
