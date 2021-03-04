@@ -1,0 +1,466 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="metadata.xsl"?>
+<siardArchive 
+   xmlns="http://www.bar.admin.ch/xmlns/siard/2.0/metadata.xsd"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+   xsi:schemaLocation="http://www.bar.admin.ch/xmlns/siard/2.0/metadata.xsd metadata.xsd"
+   version="2.0">
+  <dbname>SIARD Format 2 with SQL:2008 Standard Types</dbname>
+  <dataOwner>Enter AG, Zurich</dataOwner>
+  <dataOriginTimespan>2015</dataOriginTimespan>
+  <lobFolder>file:///D:/Projekte/SIARD/SIARD%20Suite/</lobFolder>
+  <producerApplication>Manually constructed</producerApplication>
+  <archivalDate>2015-01-19</archivalDate>
+  <messageDigest>MD5D1C411FC45542DCA86EEB1CC9B4B596C</messageDigest>
+  <clientMachine>celsius.enterag.ch</clientMachine>
+  <databaseProduct>SQL:2011</databaseProduct>
+  <connection>jdbc:manually:SQL:2011</connection>
+  <databaseUser>SIARDLOGIN</databaseUser>
+  <schemas>
+    <schema>
+      <name>SIARDSCHEMA</name>
+      <folder>schema0</folder>
+      
+      <!-- version 2.0 advanced or structured types -->
+      <types>
+        <type>
+          <name>TDISTINCT</name>
+          <category>distinct</category>
+          <instantiable>false</instantiable>
+          <final>true</final>
+          <base>INTEGER</base>
+          <description>Example of a DISTINCT type</description>
+        </type>
+        <type>
+          <name>TROW</name>
+          <category>row</category>
+          <instantiable>true</instantiable>
+          <final>true</final>
+          <attributes>
+            <attribute>
+              <name>TAPEID</name>
+              <type>INTEGER</type>
+              <defaultValue>0</defaultValue>
+            </attribute>
+            <attribute>
+              <name>TRANSCRIPTION</name>
+              <type>CLOB</type>
+            </attribute>
+            <attribute>
+              <name>SOUND</name>
+              <type>BLOB</type>
+            </attribute>
+          </attributes>
+          <description>Example of a ROW type</description>
+        </type>
+        <type>
+          <name>TARRAY</name>
+          <category>array</category>
+          <instantiable>false</instantiable>
+          <final>true</final>
+          <base>CHARACTER VARYING(255)</base>
+          <cardinality>4</cardinality>
+          <description>Example of an ARRAY type</description>
+        </type>
+        <type>
+          <name>TUDT</name>
+          <category>udt</category>
+          <instantiable>true</instantiable>
+          <final>true</final>
+          <attributes>
+            <attribute>
+              <name>ID</name>
+              <type>INTEGER</type>
+            </attribute>
+            <attribute>
+              <name>NESTEDROW</name>
+              <typeName>TROW</typeName>
+              <attributes>
+                <attribute>
+                  <name>first</name>
+                  <type>INTEGER</type>
+                </attribute>
+                <attribute>
+                  <name>second</name>
+                  <type>VARCHAR(255)</type>
+                </attribute>
+              </attributes>
+            <description>Example of nested attributes</description>
+            </attribute>
+          </attributes>
+          <description>Example of a UDT</description>
+        </type>
+      </types>
+      
+      <tables>
+        <!--  version 1.0 table -->
+        <table>
+          <name>TABLETEST1</name>
+          <folder>table0</folder>
+          <description />
+          <columns>
+            <!-- binary types -->
+            <column>
+              <name>CBIT</name>
+              <type>BIT</type>
+              <typeOriginal>BIT</typeOriginal>
+              <nullable>true</nullable>
+            </column>
+            <column>
+              <name>CBIT_32</name>
+              <type>BIT(32)</type>
+              <typeOriginal>BIT(32)</typeOriginal>
+              <nullable>true</nullable>
+            </column>
+            <column>
+              <name>CBIT_VARYING_160</name>
+              <type>BIT VARYING(160)</type>
+              <typeOriginal>BIT VARYING(160)</typeOriginal>
+              <nullable>true</nullable>
+            </column>
+            <column>
+              <name>CBINARY</name>
+              <type>BINARY</type>
+              <typeOriginal>BINARY</typeOriginal>
+              <nullable>true</nullable>
+            </column>
+            <column>
+              <name>CBINARY_5</name>
+              <type>BINARY(5)</type>
+              <typeOriginal>BINARY(5)</typeOriginal>
+              <nullable>true</nullable>
+            </column>
+            <column>
+              <name>CBINARY_VARYING_32</name>
+              <type>BINARY VARYING(32)</type>
+              <typeOriginal>BINARY VARYING(32)</typeOriginal>
+              <nullable>true</nullable>
+            </column>
+            <column>
+              <name>CBINARY_LARGE_OBJECT</name>
+              <!-- <folder>lob8</folder>  -->
+              <lobFolder>schema0/table0/lob8/</lobFolder>
+              <type>BINARY LARGE OBJECT</type>
+              <typeOriginal>BINARY LARGE OBJECT</typeOriginal>
+              <nullable>true</nullable>
+            </column>
+            <!-- character types -->
+            <column>
+              <name>CCHARACTER</name>
+              <type>CHARACTER</type>
+              <typeOriginal>CHARACTER</typeOriginal>
+              <nullable>false</nullable>
+            </column>
+            <column>
+              <name>CCHARACTER_5</name>
+              <type>CHARACTER(5)</type>
+              <typeOriginal>CHARACTER(5)</typeOriginal>
+              <nullable>true</nullable>
+            </column>
+            <column>
+              <name>CCHARACTER_VARYING_32</name>
+              <type>CHARACTER VARYING(32)</type>
+              <typeOriginal>CHARACTER VARYING(32)</typeOriginal>
+              <nullable>true</nullable>
+            </column>
+            <column>
+              <name>CCHARACTER_LARGE_OBJECT</name>
+              <!-- <folder>lob12</folder> -->
+              <lobFolder>schema0/table0/lob12/</lobFolder>
+              <type>CHARACTER LARGE OBJECT</type>
+              <typeOriginal>CHARACTER LARGE OBJECT</typeOriginal>
+              <nullable>true</nullable>
+            </column>
+            <column>
+              <name>CNATIONAL_CHARACTER</name>
+              <type>NATIONAL CHARACTER</type>
+              <typeOriginal>NATIONAL_CHARACTER</typeOriginal>
+              <nullable>true</nullable>
+            </column>
+            <column>
+              <name>CNATIONAL_CHARACTER_5</name>
+              <type>NATIONAL CHARACTER(5)</type>
+              <typeOriginal>NATIONAL_CHARACTER(5)</typeOriginal>
+              <nullable>true</nullable>
+            </column>
+            <column>
+              <name>CNATIONAL_CHARACTER_VARYING_32</name>
+              <type>NATIONAL CHARACTER VARYING(32)</type>
+              <typeOriginal>NATIONAL_CHARACTER VARYING(32)</typeOriginal>
+              <nullable>true</nullable>
+            </column>
+            <column>
+              <name>CNATIONAL_CHARACTER_LARGE_OBJECT</name>
+              <!--  <folder>lob16</folder> -->
+              <lobFolder>schema0/table0/lob16/</lobFolder>
+              <type>NATIONAL CHARACTER LARGE OBJECT</type>
+              <typeOriginal>NATIONAL CHARACTER LARGE OBJECT</typeOriginal>
+              <nullable>true</nullable>
+            </column>
+            <column>
+              <name>CXML</name>
+              <!-- <folder>lob17</folder> -->
+              <lobFolder>schema0/table0/lob17/</lobFolder>
+              <type>XML</type>
+              <typeOriginal>XML</typeOriginal>
+              <nullable>true</nullable>
+            </column>
+            <!-- integer types -->
+            <column>
+              <name>CSMALLINT</name>
+              <type>SMALLINT</type>
+              <typeOriginal>SMALLINT</typeOriginal>
+              <nullable>true</nullable>
+            </column>
+            <column>
+              <name>CINTEGER</name>
+              <type>INTEGER</type>
+              <typeOriginal>INTEGER</typeOriginal>
+              <nullable>false</nullable>
+            </column>
+            <column>
+              <name>CBIGINT</name>
+              <type>BIGINT</type>
+              <typeOriginal>BIGINT</typeOriginal>
+              <nullable>true</nullable>
+            </column>
+            <!-- fixed numeric types -->
+            <column>
+              <name>CDECIMAL</name>
+              <type>DECIMAL</type>
+              <typeOriginal>DECIMAL</typeOriginal>
+              <nullable>true</nullable>
+            </column>
+            <column>
+              <name>CDECIMAL_3</name>
+              <type>DECIMAL(3)</type>
+              <typeOriginal>DECIMAL(3)</typeOriginal>
+              <nullable>true</nullable>
+            </column>
+            <column>
+              <name>CDECIMAL_5_2</name>
+              <type>DECIMAL(5,2)</type>
+              <typeOriginal>DECIMAL(5,2)</typeOriginal>
+              <nullable>true</nullable>
+            </column>
+            <column>
+              <name>CNUMERIC</name>
+              <type>NUMERIC</type>
+              <typeOriginal>NUMERIC</typeOriginal>
+              <nullable>true</nullable>
+            </column>
+            <column>
+              <name>CNUMERIC_3</name>
+              <type>NUMERIC(3)</type>
+              <typeOriginal>NUMERIC(3)</typeOriginal>
+              <nullable>true</nullable>
+            </column>
+            <column>
+              <name>CNUMERIC_5_2</name>
+              <type>NUMERIC(5,2)</type>
+              <typeOriginal>NUMERIC(5,2)</typeOriginal>
+              <nullable>true</nullable>
+            </column>
+            <!--  approximate numerics types -->
+            <column>
+              <name>CREAL</name>
+              <type>REAL</type>
+              <typeOriginal>REAL</typeOriginal>
+              <nullable>true</nullable>
+            </column>
+            <column>
+              <name>CFLOAT</name>
+              <type>FLOAT</type>
+              <typeOriginal>FLOAT</typeOriginal>
+              <nullable>true</nullable>
+            </column>
+            <column>
+              <name>CFLOAT_13</name>
+              <type>FLOAT(13)</type>
+              <typeOriginal>FLOAT(13)</typeOriginal>
+              <nullable>true</nullable>
+            </column>
+            <column>
+              <name>CDOUBLE_PRECISION</name>
+              <type>DOUBLE PRECISION</type>
+              <typeOriginal>DOUBLE PRECISION</typeOriginal>
+              <nullable>true</nullable>
+            </column>
+            <!-- date and time types  -->
+            <column>
+              <name>CDATE</name>
+              <type>DATE</type>
+              <typeOriginal>DATE</typeOriginal>
+              <nullable>true</nullable>
+            </column>
+            <column>
+              <name>CTIME</name>
+              <type>TIME</type>
+              <typeOriginal>TIME</typeOriginal>
+              <nullable>true</nullable>
+            </column>
+            <column>
+              <name>CTIME_5</name>
+              <type>TIME(5)</type>
+              <typeOriginal>TIME(5)</typeOriginal>
+              <nullable>true</nullable>
+            </column>
+            <column>
+              <name>CTIMESTAMP</name>
+              <type>TIMESTAMP</type>
+              <typeOriginal>TIMESTAMP</typeOriginal>
+              <nullable>true</nullable>
+            </column>
+            <column>
+              <name>CTIMESTAMP_7</name>
+              <type>TIMESTAMP(7)</type>
+              <typeOriginal>TIMESTAMP(7)</typeOriginal>
+              <nullable>true</nullable>
+            </column>
+          </columns>
+          <primaryKey>
+            <name>TABLETEST1PK</name>
+            <column>CCHARACTER</column>
+            <column>CINTEGER</column>
+          </primaryKey>
+          <rows>1</rows>
+        </table>
+
+        <!--  advanced table -->
+        <table>
+          <name>TABLETEST2</name>
+          <folder>table1</folder>
+          <description />
+          <columns>
+            <column>
+              <name>ID</name>
+              <type>INTEGER</type>
+              <nullable>false</nullable>
+            </column>
+            <column>
+              <name>CDISTINCT</name>
+              <typeName>TDISTINT</typeName>
+            </column>
+            <column>
+              <name>CROW</name>
+              <lobFolder>lob2</lobFolder>
+              <typeName>TROW</typeName>
+              <fields>
+                <!-- TAPEID -->
+                <field>
+                  <description>Tape ID</description>
+                </field>
+                <!-- TRANSCRIPTION -->
+                <field>
+                  <lobFolder>field1</lobFolder>
+                  <description>Tape transcription</description>
+                </field>
+                <!-- SOUND -->
+                <field>
+                  <lobFolder>field2</lobFolder>
+                  <mimeType>audio/mpeg</mimeType>
+                  <description>Digitized tape</description>
+                </field>
+              </fields>
+              <description>Tape recordings</description>
+            </column>
+            <column>
+              <name>CARRAY</name>
+              <typeName>TARRAY</typeName>
+              <description>Up to 4 fields for complex foreign names</description>
+            </column>
+            <column>
+              <name>CUDT</name>
+              <lobFolder>lob4</lobFolder>
+              <typeName>TUDT</typeName>
+              <fields>
+                <!-- ID -->
+                <field></field>
+                <!-- NESTEDROW -->
+                <field>
+                  <lobFolder>field1</lobFolder>
+                  <fields>
+                    <!-- TAPEID -->
+                    <field>
+                      <description>Tape ID</description>
+                    </field>
+                    <!-- TRANSCRIPTION -->
+                    <field>
+                      <lobFolder>field1</lobFolder>
+                      <description>Tape transcription</description>
+                    </field>
+                    <!-- SOUND -->
+                    <field>
+                      <lobFolder>field2</lobFolder>
+                      <mimeType>audio/mpeg</mimeType>
+                      <description>Digitized tape</description>
+                    </field>
+                  </fields>
+                  <description>Tape recordings nested</description>
+                </field>
+              </fields>
+              <description>UDT type with field of advanced type</description>
+            </column>
+          </columns>
+          <primaryKey>
+            <name>TABLETEST2PK</name>
+            <column>ID</column>
+          </primaryKey>
+          <rows>1000000</rows>
+        </table>
+        
+      </tables>
+    </schema>
+  </schemas>
+  <users>
+    <user>
+      <name>SIARDLOGIN</name>
+    </user>
+    <user>
+      <name>SIARDUSER</name>
+    </user>
+  </users>
+  <roles>
+    <role>
+      <name>public</name>
+      <admin />
+    </role>
+  </roles>
+  <privileges>
+    <privilege>
+      <type>UPDATE</type>
+      <object>TABLE SIARDSCHEMA.TABLETEST2</object>
+      <grantor>dbo</grantor>
+      <grantee>SIARDUSER</grantee>
+      <option>ADMIN</option>
+    </privilege>
+    <privilege>
+      <type>INSERT</type>
+      <object>TABLE SIARDSCHEMA.TABLETEST2</object>
+      <grantor>dbo</grantor>
+      <grantee>SIARDUSER</grantee>
+      <option>ADMIN</option>
+    </privilege>
+    <privilege>
+      <type>REFERENCES</type>
+      <object>TABLE SIARDSCHEMA.TABLETEST2</object>
+      <grantor>dbo</grantor>
+      <grantee>SIARDUSER</grantee>
+      <option>ADMIN</option>
+    </privilege>
+    <privilege>
+      <type>SELECT</type>
+      <object>TABLE SIARDSCHEMA.TABLETEST2</object>
+      <grantor>dbo</grantor>
+      <grantee>SIARDUSER</grantee>
+      <option>ADMIN</option>
+    </privilege>
+    <privilege>
+      <type>DELETE</type>
+      <object>TABLE SIARDSCHEMA.TABLETEST2</object>
+      <grantor>dbo</grantor>
+      <grantee>SIARDUSER</grantee>
+      <option>ADMIN</option>
+    </privilege>
+  </privileges>
+</siardArchive>
