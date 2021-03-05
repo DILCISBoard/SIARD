@@ -43,5 +43,5 @@ Available in formats
 [PDF](/SIARD%202.1/recommendations/lobs%20outside%20the%20SIARD%20file/0.28/Recommendation%20for%20storing%20large%20objects%20outside%20the%20SIARD%20file%20ver%200.28.gd.pdf)
 and [Open Document Text](/SIARD%202.1/recommendations/lobs%20outside%20the%20SIARD%20file/0.28/Recommendation%20for%20storing%20large%20objects%20outside%20the%20SIARD%20file%20ver%200.28.gd.odt)
 
-## Tools
-Note that apart from the E-ARK tools supporting the SIARD Format [Database Preservation Toolkit](http://www.database-preservation.com/) and [Database Visualization Toolkit](http://visualization.database-preservation.com/) there is also the [SIARD Suite](https://www.bar.admin.ch/bar/en/home/archiving/tools/siard-suite.html) made by the SFA, which recently has been made open source.
+## Guideline and tools
+Information on how to package SIARD files into SIPs, AIPs and DIPs can be found at the CITS SIARD repository https://github.com/DILCISBoard/CITS-SIARD. Here you will also find links to tools that create and read SIARD files. 
