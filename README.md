@@ -25,14 +25,19 @@ The development and release of new versions will be coordinated in the DILCIS bo
 
 The SFA is represented in the DILCIS board (as well as in DLM Forum) together with other national archives using SIARD.
 
+SIARD 2.2 adds support for files outside the database according to part 9 of SQL:2008 (ISO/IEC 9075-9:2008 – SQL/MED) as well as scalability supporting large objects stored outside the SIARD file. Apart from this it is identical to version 2.1.1.
+It has been developed by the DILCIS Board during the E-ARK3 project.
+
 ## Specifications
 
 - SIARD 1.0   [2008-09-30](https://github.com/DILCISBoard/SIARD/blob/master/SIARD%201.0/format/2008-09-30/)
 - SIARD 2.0   [2016-06-01](https://github.com/DILCISBoard/SIARD/blob/master/SIARD%202.0/format/2016-06-01/)
 - SIARD 2.1   [2018-02-15](https://github.com/DILCISBoard/SIARD/blob/master/SIARD%202.1/format/2018-02-15/)
 - SIARD 2.1.1 [2019-05-15](https://github.com/DILCISBoard/SIARD/blob/master/SIARD%202.1/format/2018-02-15/)
-- SIARD 2.2   [2021-08-31](./specification/SIARD_2_2.pdf)
+- SIARD 2.2   [2021-08-31](https://github.com/DILCISBoard/SIARD/blob/master/SIARD_2-2/format/2021-08-31/)
 
+
+<!-- 
 ## Recommendations
 
 Recommendation for storing large objects outside the SIARD file ver 0.28 [2018-08-28](https://github.com/DILCISBoard/SIARD/tree/master/SIARD%202.1/recommendations/lobs%20outside%20the%20SIARD%20file/0.28)
@@ -40,6 +45,7 @@ Available in formats
 [Github Markdown](/SIARD%202.1/recommendations/lobs%20outside%20the%20SIARD%20file/0.28/Recommendation%20for%20storing%20large%20object%20outside%20the%20SIARD%20file.gfm.md),
 [PDF](/SIARD%202.1/recommendations/lobs%20outside%20the%20SIARD%20file/0.28/Recommendation%20for%20storing%20large%20objects%20outside%20the%20SIARD%20file%20ver%200.28.gd.pdf)
 and [Open Document Text](/SIARD%202.1/recommendations/lobs%20outside%20the%20SIARD%20file/0.28/Recommendation%20for%20storing%20large%20objects%20outside%20the%20SIARD%20file%20ver%200.28.gd.odt)
+-->
 
 ## Guideline and tools
 Information on how to package SIARD files into SIPs, AIPs and DIPs can be found at the CITS SIARD repository https://github.com/DILCISBoard/CITS-SIARD. Here you will also find links to tools that create and read SIARD files.
