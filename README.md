@@ -25,7 +25,8 @@ The development and release of new versions will be coordinated in the DILCIS bo
 
 The SFA is represented in the DILCIS board (as well as in DLM Forum) together with other national archives using SIARD.
 
-SIARD 2.2 adds support for files outside the database according to part 9 of SQL:2008 (ISO/IEC 9075-9:2008 – SQL/MED) as well as scalability supporting large objects stored outside the SIARD file. Apart from this it is identical to version 2.1.1.
+SIARD 2.2 adds support for files outside the database according to part 9 of SQL:2008 (ISO/IEC 9075-9:2008 – SQL/MED) as well as scalability supporting large objects stored outside the SIARD file.
+Apart from this it is identical to version 2.1.1.
 It has been developed by the DILCIS Board during the E-ARK3 project.
 
 ## Specifications
