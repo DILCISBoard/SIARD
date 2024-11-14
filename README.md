@@ -49,4 +49,6 @@ and [Open Document Text](/SIARD%202.1/recommendations/lobs%20outside%20the%20SIA
 -->
 
 ## Guideline and tools
+"Specification for the location of LOBs according to SIARD" [here](https://github.com/DILCISBoard/SIARD/blob/spec_LOB_location/SIARD_2-2/format/2021-08-31/2024.08.01%20SIARD%20LOB%20location%20issue.pdf)
+
 Information on how to package SIARD files into SIPs, AIPs and DIPs can be found at the CITS SIARD repository https://github.com/DILCISBoard/CITS-SIARD. Here you will also find links to tools that create and read SIARD files.
